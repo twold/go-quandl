@@ -35,7 +35,7 @@ func init() {
 	flag.StringVar(&format, "format", "json", "-format=json add the response format you would like here.  Options are 'json', xml' and 'csv'")
 	// Modified SP500 input file from
 	// https://pkgstore.datahub.io/core/s-and-p-500-companies/constituents_json/data/64dd3e9582b936b0352fdd826ecd3c95/constituents_json.json
-	flag.StringVar(&inputFile, "inputFile", "constituents_json.json", "-inputFile=")
+	flag.StringVar(&inputFile, "inputFile", "SP500.json", "-inputFile=")
 	// Select sector
 	flag.StringVar(&sector, "sector", "all", "-sector=all returns all symbols in list, or you can specify a sector to retrieve a subset of symbols 'Industrials', 'Health Care', 'Information Technology'")
 	// This is path to data files including input and output folders
