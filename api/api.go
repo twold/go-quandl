@@ -25,7 +25,9 @@ func ReadInputList(path, inputFile, sector string) ([]string, error) {
 	}
 
 	symbols := make([]string, 0)
+
 	for _, item := range list {
+
 		// if sector is not specified or if all sectors are requested
 		if sector == "" || sector == "all" {
 			symbols = append(symbols, item.Symbol)
