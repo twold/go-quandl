@@ -17,6 +17,7 @@ import (
 )
 
 func formatDataSet(columnNames []*string, data []interface{}) ([]byte, error) {
+
 	log.Printf("Transforming data set.\n")
 
 	str := "["
